@@ -1,6 +1,8 @@
 import React from "react";
 
-function Recipe({ recipeRow, index }) {
+function Recipe({ recipeRow, index, deleteRecipe}) {
+  
+  
   
   return (
      
@@ -10,7 +12,7 @@ function Recipe({ recipeRow, index }) {
       <td><img src={recipeRow.photo} /></td>
               <td>{recipeRow.ingredients}</td>
               <td>{recipeRow.preparation}</td>
-      <td><button></button></td>
+      <td><button name="delete" onClick={deleteRecipe}>Delete</button></td>
             </tr>
   )
             

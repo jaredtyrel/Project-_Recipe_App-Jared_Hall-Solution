@@ -69,9 +69,9 @@ function RecipeCreate({addRecipe}) {
                   onChange={handleChange}
                   value={formData.ingredients}
                   ></textarea></td>
-            <td><textarea  
+            <td><textarea 
+                  name="preparation"  
                   id="preperation" 
-                  name="preperation"
                   placeholder="Preperation"
                   onChange={handleChange}
                   value={formData.preperation}

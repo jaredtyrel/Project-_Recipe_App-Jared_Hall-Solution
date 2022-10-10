@@ -13,10 +13,21 @@ header {
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
 }
 
+img{
+  object-fit: scale-down;
+  width: 100%;
+  height: 100%;
+}
 /* typography */
 
 html {
   font-family: 'helvetica neue', sans-serif;
+}
+
+h1 {
+  font-family: 'Playfair Display sc';
+  text-align: center;
+  size: 64px;
 }
 
 thead th, tfoot th {
@@ -26,6 +37,8 @@ thead th, tfoot th {
 th {
   letter-spacing: 2px;
   padding: 10px;
+  background-color: #fff;
+  width: 10%;
 }
 
 td {
@@ -35,6 +48,7 @@ td {
   font-size: 12px;
   padding: 10px;
   text-align: center;
+  width: 10%;
 }
 
 /* table */
@@ -54,7 +68,26 @@ table {
   text-overflow: ellipsis;
 }
 
+
 /* Column Size for thead */
 
+th:nth-child(4){width: 30%;}
+th:nth-child(5){width: 30%;}
+
+td:nth-child(4){width: 30%;}
+td:nth-child(5){width: 30%;}
+
+input {
+  width: 100%;
+}
+
+textarea {
+  width: 100%;
+}
 
 /* Column size for tbody */
+
+tr:nth-child(odd) {background: #fdeec7}
+
+
+
